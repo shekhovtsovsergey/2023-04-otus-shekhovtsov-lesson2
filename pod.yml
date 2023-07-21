@@ -1,0 +1,15 @@
+apiVersion : v1
+kind: Pod
+metadata:
+  name: my-app
+  labels:
+    env  : prod
+    app  : main
+    tier : core
+    owner: SergeyShekhovtsov
+spec:
+  containers:
+    - name : core
+      image: 89629417575/lesson2
+      ports:
+        - containerPort: 8000
